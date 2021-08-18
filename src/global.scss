@@ -1,0 +1,16 @@
+$ice: #D3E0EA;
+$light: #F6F5F5;
+$blue: #1687A7;
+$darkBlue: #276678;
+
+$mainFS: 20px;
+$mainFW: 300;
+
+$shadow: 0 .5rem 1rem rgba(black, .15);
+
+
+@mixin mobile {
+    @media (max-width: 768px) {
+        @content
+    }
+}

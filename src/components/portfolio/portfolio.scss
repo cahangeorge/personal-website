@@ -1,0 +1,30 @@
+@import '../../global.scss';
+
+.portfolio {
+    background-color: $ice;
+    
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h2 {
+            font-weight: $mainFW + 100;
+            color: $darkBlue;
+        }
+
+        .bar-h2 {
+            width: 200px;
+            height: 5px;
+            background-color: $darkBlue;
+            border-radius: 50px;
+            // overflow-x: hidden;
+        }
+    }
+
+    .listProjects {
+        display: flex;
+        align-items: center;
+    }
+}

@@ -1,0 +1,11 @@
+@import '../../../global.scss';
+
+.biography {
+    border-radius: 25px 50px;
+
+    p {
+        margin: 0px;
+        font-size: $mainFS;
+        font-weight: $mainFW;
+    }
+}

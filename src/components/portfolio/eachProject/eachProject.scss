@@ -1,0 +1,44 @@
+@import '../../../global.scss';
+
+.eachProject {
+    position: relative;
+    border-radius: 20px;
+    font-size: $mainFS;
+    font-weight: $mainFW;
+    transition: 1s;
+    display: flex;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        color: $light;
+
+        img {
+            width: 225px;
+            height: auto;
+            border-radius: 20px;
+        }
+
+        p {
+            width: 80%;
+            position: absolute;
+            top: calc(100% - 55%);
+            text-align: center;
+            left: calc((100% - 80%) / 2);
+            background-color: $blue;
+            border-radius: 20px;
+            opacity: 0;
+            transition: 1s;
+        }
+    }
+
+    &:hover {
+        background-color: $blue;
+        transform: scale(1.05) !important;
+
+        p {
+            opacity: 1;
+            transform: scale(1.025);
+        }
+    }
+}

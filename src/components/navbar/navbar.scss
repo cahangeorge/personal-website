@@ -1,0 +1,81 @@
+@import '../../global.scss';
+
+.navigation {
+    // padding: 5px;
+    // position: fixed;
+    width: 100%;
+    height: 75px;
+    z-index: 3;
+    font-size: $mainFS;
+    background-color: $darkBlue;
+    // box-shadow: 0px 0px 5px 1px black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        // padding: 10px;
+        border-radius: 25px  ;
+        box-shadow: 0px 0px 2.5px 0px $light;
+        color: $light;
+        text-decoration: none;
+        transition: all 1s ease;
+
+        &:hover {
+            color: black;
+            box-shadow: 0px 0px 7.5px 0px black;
+            transform: scale(1.05);
+        }
+    }
+
+    .nav {
+
+        &:hover {
+            display: none !important;
+        }
+    }
+
+    .hamburger {
+        display: none;
+        
+        @include mobile {
+            width: 34px;
+            height: 28px;
+            // margin: 0px 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+
+            span {
+                width: 100%;
+                height: 4px;
+                background-color: $light;
+                border-radius: 50px;
+                box-shadow: 0px 0px 5px 0px black;
+                transform-origin: left;
+                transition: all 1s ease;
+            }
+        }
+    }
+
+    &.active {
+        
+        .hamburger {
+            
+            span {
+                &:first-child {
+                    transform: translate(0px, 24px) rotate(-45deg);
+                }
+                &:nth-child(2) {
+                    opacity: 0;
+                    transform: translate(35px, 0px);
+                }
+                &:last-child {
+                    transform: translate(0px, -24px) rotate(45deg);
+                }
+            }
+        }
+    }
+}
