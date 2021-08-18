@@ -56,7 +56,7 @@ export default function About() {
         },
         {
             icon: <FcCommandLine className='display-1' />,
-            description: 'When I got to high school I fell in love with programming and started to learn and create various applications.'
+            description: 'I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences..'
         }
     ];
 
