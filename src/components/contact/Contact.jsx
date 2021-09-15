@@ -30,6 +30,10 @@ export default function Contact() {
                 <textarea name="message" cols="30" rows="10" placeholder='Your Message' className='shadow p-2 m-3' />
                 <input type="submit" value='Submit' className='submit shadow p-2 m-3' />
             </form>
+
+            <a href="whatsapp://send?text=The text to share!&phone=0749374227" data-action="share/whatsapp/share">Share via Whatsapp</a>
+
+
             <div className='copyright mb-0 px-3 py-4 border-top border-2 w-100 text-center'>Cahan George &copy;2021</div>
         </footer>
     )
