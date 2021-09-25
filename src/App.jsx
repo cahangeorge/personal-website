@@ -12,7 +12,7 @@ import Portfolio from './components/portfolio/Portfolio';
 import Contact from './components/contact/Contact';
 
 export default function App() {
-  const [ menuOpen, setMenuOpen ] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {
     AOS.init({

@@ -70,6 +70,7 @@ export default function About() {
                 <div className="d-flex flex-column col-10 col-sm-8 col-md-7 col-lg-5 col-xl-5">
                     {biography.map(item => (
                         <Biography 
+                            key={item.description}
                             icon={item.icon}
                             description={item.description}
                         />
@@ -78,6 +79,7 @@ export default function About() {
                 <div className="skills col-10 col-sm-8 col-md-7 col-lg-5 col-xl-5">
                     {list.map(item => (
                         <Progress 
+                            key={item.title}
                             title={item.title}
                             procent={item.procent}
                         />

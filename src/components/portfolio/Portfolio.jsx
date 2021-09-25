@@ -5,6 +5,8 @@ import EachProject from './eachProject/EachProject';
 import movie from '../../assets/movie.png';
 import weather from '../../assets/weather.png';
 import todo from '../../assets/todo.png';
+import form from '../../assets/survey-form (2).png';
+import art from '../../assets/art-shirts.png';
 
 export default function Portfolio() {
     const list = [
@@ -22,6 +24,16 @@ export default function Portfolio() {
             link: 'https://codepen.io/cahangeorge/pen/xxdMPgg',
             image: todo,
             title: 'To-Do App'
+        },
+        {
+            link: 'https://survey-form.herokuapp.com/',
+            image: form,
+            title: 'Survey-Form'
+        },
+        {
+            link: 'https://art-shirts.herokuapp.com/',
+            image: art,
+            title: 'Shirts'
         }
     ];
 
@@ -36,6 +48,7 @@ export default function Portfolio() {
                 <EachProject link={item.link}
                             image={item.image}
                             title={item.title}
+                            key={item.title}
                 />
             ))}
             </div>
