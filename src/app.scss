@@ -1,1 +1,14 @@
+@import './global.scss';
 
+.app {
+    position: relative;
+
+    .whatsapp {
+        background-color: #fff;
+        color: #25D366;
+        font-size: 48px;
+        position: fixed;
+        top: calc(100vh - 64px);
+        left: calc(100vw - 64px);
+    }
+}

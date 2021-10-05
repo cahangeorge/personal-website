@@ -6,7 +6,7 @@ import { BsCodeSlash } from "react-icons/bs";
 
 export default function Navbar({menuOpen, setMenuOpen}) {
     return (
-        <div className={'navigation position-fixed shadow ' + (menuOpen && 'active')}>
+        <div className={'navigation position-fixed shadow-lg ' + (menuOpen && 'active')}>
                 <a href='/' className="logo d-flex flex-row align-items-center m-0 ms-4 p-2" data-aos='zoom-in'>
                     <BsCodeSlash className='h1 m-0 me-2' />
                     <p className='fs-3 m-0'>C-G</p>

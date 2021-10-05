@@ -30,10 +30,8 @@
                 transition: 0.75s ease;
 
                 &:hover {
-                    // background-color: $blue;
-                    color: black;
-                    box-shadow: 0px 0px 7.5px 0px black;
-                    transform: scale(1.05);
+                    font-weight: 400;
+                    transform: scale(1.25);
                 }
             }
         }

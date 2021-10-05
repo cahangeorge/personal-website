@@ -18,7 +18,7 @@ export default function Contact() {
     }
 
     return (
-        <footer className='contact d-flex flex-column align-items-center justify-content-center shadow mb-0' id='contact'>
+        <footer className='contact d-flex flex-column align-items-center justify-content-center mb-0' id='contact'>
             <div className='title pt-5 pb-3'>
                 <h2 className='display-3' data-aos='zoom-in'>Contact</h2>
                 <div className='bar-h2' data-aos='zoom-in'></div>
@@ -31,10 +31,8 @@ export default function Contact() {
                 <input type="submit" value='Submit' className='submit shadow p-2 m-3' />
             </form>
 
-            <a href="whatsapp://send?text=The text to share!&phone=0749374227" data-action="share/whatsapp/share">Share via Whatsapp</a>
 
-
-            <div className='copyright mb-0 px-3 py-4 border-top border-2 w-100 text-center'>Cahan George &copy;2021</div>
+            <div className='copyright mb-0 px-3 py-4 border-top border-2 w-100 text-center shadow-lg'>Cahan George &copy;2021</div>
         </footer>
     )
 }

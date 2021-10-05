@@ -18,7 +18,7 @@ export default class Intro extends Component {
     render(){
         return(
             <div className="intro position-relative" id="intro" data-aos='zoom-in'>
-                    <h1 id="myElement" className='position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center text-center shadow-lg m-0 mx-auto p-3 col-12 col-sm-10 col-md-9 col-lg-8 col-xl-7'></h1>
+                    <h1 id="myElement" className='position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center text-center shadow m-0 mx-auto p-3 col-12 col-sm-10 col-md-9 col-lg-8 col-xl-7'></h1>
                     <div className="scroll-down position-absolute bottom-0 start-50 translate-middle-x d-flex flex-column align-items-center justify-content-center">
                         <p>Scroll Down!</p>
                         <BsChevronDoubleDown className='icon-down' />
@@ -28,7 +28,7 @@ export default class Intro extends Component {
                         options={{
                             background: {
                                 color: {
-                                value: "#D3E0EA",
+                                value: "#F6F5F5",
                                 },
                             },
                         fpsLimit: 60,

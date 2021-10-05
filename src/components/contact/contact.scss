@@ -1,7 +1,7 @@
 @import '../../global.scss';
 
 .contact {
-    background-color: $darkBlue;
+    background-color: $light;
 
     .title {
         display: flex;
@@ -11,20 +11,20 @@
 
         h2 {
             font-weight: $mainFW + 100;
-            color: $ice;
+            color: $darkBlue;
         }
 
         .bar-h2 {
             width: 200px;
             height: 5px;
-            background-color: $ice;
+            background-color: $darkBlue;
             border-radius: 50px;
             // overflow-x: hidden;
         }
 
         p {
             text-align: center;
-            color: $ice;
+            color: #262626;
             margin-top: 25px;
         }
     }
@@ -35,7 +35,7 @@
             background-color: $ice;
             width: 250px;
             border: none;
-            border-radius: 15px;
+            border-radius: 10px;
             transition: 1s;
 
             &:focus {
@@ -55,7 +55,7 @@
     }
 
     .copyright {
-        border-color: $ice;
+        background-color: $darkBlue;
         color: $ice;
     }
 }

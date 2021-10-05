@@ -7,6 +7,7 @@ import weather from '../../assets/weather.png';
 import todo from '../../assets/todo.png';
 import form from '../../assets/survey-form (2).png';
 import art from '../../assets/art-shirts.png';
+import colorful from '../../assets/colorful.png';
 
 export default function Portfolio() {
     const list = [
@@ -35,10 +36,15 @@ export default function Portfolio() {
             image: art,
             title: 'Shirts'
         },
+        // {
+        //     link: 'https://fathomless-springs-64134.herokuapp.com/',
+        //     image: '',
+        //     title: 'Design'
+        // },
         {
-            link: 'https://fathomless-springs-64134.herokuapp.com/',
-            image: '',
-            title: 'Design'
+            link: 'https://colorful-website.herokuapp.com/',
+            image: colorful,
+            title: 'Colorful'
         }
     ];
 

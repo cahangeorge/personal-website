@@ -23,9 +23,9 @@
         transition: all 1s ease;
 
         &:hover {
-            color: black;
+            font-weight: 400;
             box-shadow: 0px 0px 7.5px 0px black;
-            transform: scale(1.05);
+            transform: scale(1.10);
         }
     }
 

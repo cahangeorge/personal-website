@@ -1,13 +1,15 @@
 @import '../../../global.scss';
 
 .eachProject {
+    background-color: $ice;
     position: relative;
-    border-radius: 20px;
+    border-radius: 10px;
     font-size: $mainFS;
     font-weight: $mainFW;
     transition: 1s;
     display: flex;
     align-items: center;
+    transition: 1s;
 
     a {
         text-decoration: none;
@@ -16,7 +18,8 @@
         img {
             width: 225px;
             height: auto;
-            border-radius: 20px;
+            border-radius: 10px;
+            transition: 1s;
         }
 
         p {
@@ -25,16 +28,22 @@
             top: calc(100% - 55%);
             text-align: center;
             left: calc((100% - 80%) / 2);
-            background-color: $blue;
+            background-color: $ice;
+            color: #262626;
             border-radius: 20px;
+            font-weight: $mainFW + 100;
             opacity: 0;
             transition: 1s;
         }
     }
 
     &:hover {
-        background-color: $blue;
+        background-color: $ice;
         transform: scale(1.05) !important;
+
+        img {
+            filter: blur(0.5px) brightness(60%);
+        }
 
         p {
             opacity: 1;

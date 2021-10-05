@@ -11,6 +11,9 @@ import About from './components/about/About';
 import Portfolio from './components/portfolio/Portfolio';
 import Contact from './components/contact/Contact';
 
+import { FaWhatsappSquare } from "react-icons/fa";
+
+
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -22,13 +25,16 @@ export default function App() {
   }, []);
 
   return (
-    <div className='app shadow-lg'>
+    <div className='app shadow-lg position-relative'>
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Intro />
       <About />
       <Portfolio />
       <Contact />
+      <a href="https://api.whatsapp.com/send?phone=+40725932889">
+        <FaWhatsappSquare className='whatsapp shadow-lg rounded' data-aos='zoom-in' />
+      </a>
     </div>
   )
 }
