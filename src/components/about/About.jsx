@@ -17,11 +17,11 @@ export default function About() {
         },
         {
             title: 'JavaScript',
-            procent: '80'
+            procent: '90'
         },
         {
             title: 'Bootstrap',
-            procent: '60'
+            procent: '75'
         },
         {
             title: 'Sass',
@@ -29,15 +29,19 @@ export default function About() {
         },
         {
             title: 'React',
-            procent: '50'
+            procent: '65'
         },
         {
             title: 'D3.js',
-            procent: '60'
+            procent: '50'
         },
         {
             title: 'NodeJS',
-            procent: '40'
+            procent: '50'
+        },
+        {
+            title: Redux;
+            procent: '30';
         },
         {
             title: 'jQuery',
